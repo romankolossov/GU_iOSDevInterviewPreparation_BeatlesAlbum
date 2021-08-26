@@ -16,6 +16,16 @@
 		C8A0834626D7997B009D4920 /* BeatlesAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0834526D7997B009D4920 /* BeatlesAlbumTests.swift */; };
 		C8A0835126D7997B009D4920 /* BeatlesAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0835026D7997B009D4920 /* BeatlesAlbumUITests.swift */; };
 		C8A0835F26D7A4F2009D4920 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C8A0835E26D7A4F2009D4920 /* .swiftlint.yml */; };
+		C8A0836F26D7AC04009D4920 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0836326D7AC04009D4920 /* DetailPresenter.swift */; };
+		C8A0837026D7AC04009D4920 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0836426D7AC04009D4920 /* DetailViewModel.swift */; };
+		C8A0837126D7AC04009D4920 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0836526D7AC04009D4920 /* DetailAssembly.swift */; };
+		C8A0837226D7AC04009D4920 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0836726D7AC04009D4920 /* DetailViewController.swift */; };
+		C8A0837326D7AC04009D4920 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0836826D7AC04009D4920 /* HeaderView.swift */; };
+		C8A0837426D7AC04009D4920 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0836926D7AC04009D4920 /* SongCell.swift */; };
+		C8A0837526D7AC04009D4920 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0836B26D7AC04009D4920 /* DetailInteractor.swift */; };
+		C8A0837626D7AC04009D4920 /* DetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0836C26D7AC04009D4920 /* DetailModule.swift */; };
+		C8A0837726D7AC04009D4920 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0836E26D7AC04009D4920 /* DetailRouter.swift */; };
+		C8A0837A26D7AC2A009D4920 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0837926D7AC29009D4920 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,16 @@
 		C8A0835026D7997B009D4920 /* BeatlesAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatlesAlbumUITests.swift; sourceTree = "<group>"; };
 		C8A0835226D7997B009D4920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8A0835E26D7A4F2009D4920 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C8A0836326D7AC04009D4920 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		C8A0836426D7AC04009D4920 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		C8A0836526D7AC04009D4920 /* DetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
+		C8A0836726D7AC04009D4920 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C8A0836826D7AC04009D4920 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C8A0836926D7AC04009D4920 /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		C8A0836B26D7AC04009D4920 /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		C8A0836C26D7AC04009D4920 /* DetailModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailModule.swift; sourceTree = "<group>"; };
+		C8A0836E26D7AC04009D4920 /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		C8A0837926D7AC29009D4920 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +124,8 @@
 			children = (
 				C8A0832B26D79976009D4920 /* AppDelegate.swift */,
 				C8A0832D26D79976009D4920 /* SceneDelegate.swift */,
+				C8A0836126D7AC04009D4920 /* Detail */,
+				C8A0837826D7AC29009D4920 /* List */,
 				C8A0832F26D79976009D4920 /* ViewController.swift */,
 				C8A0833726D7997A009D4920 /* Assets.xcassets */,
 				C8A0833926D7997A009D4920 /* LaunchScreen.storyboard */,
@@ -129,6 +151,62 @@
 				C8A0835226D7997B009D4920 /* Info.plist */,
 			);
 			path = BeatlesAlbumUITests;
+			sourceTree = "<group>";
+		};
+		C8A0836126D7AC04009D4920 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C8A0836226D7AC04009D4920 /* Presenter */,
+				C8A0836526D7AC04009D4920 /* DetailAssembly.swift */,
+				C8A0836626D7AC04009D4920 /* View */,
+				C8A0836A26D7AC04009D4920 /* Interactor */,
+				C8A0836C26D7AC04009D4920 /* DetailModule.swift */,
+				C8A0836D26D7AC04009D4920 /* Router */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C8A0836226D7AC04009D4920 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C8A0836326D7AC04009D4920 /* DetailPresenter.swift */,
+				C8A0836426D7AC04009D4920 /* DetailViewModel.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C8A0836626D7AC04009D4920 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8A0836726D7AC04009D4920 /* DetailViewController.swift */,
+				C8A0836826D7AC04009D4920 /* HeaderView.swift */,
+				C8A0836926D7AC04009D4920 /* SongCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8A0836A26D7AC04009D4920 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C8A0836B26D7AC04009D4920 /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C8A0836D26D7AC04009D4920 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C8A0836E26D7AC04009D4920 /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C8A0837826D7AC29009D4920 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C8A0837926D7AC29009D4920 /* ListViewController.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +362,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A0833026D79976009D4920 /* ViewController.swift in Sources */,
+				C8A0837526D7AC04009D4920 /* DetailInteractor.swift in Sources */,
+				C8A0837626D7AC04009D4920 /* DetailModule.swift in Sources */,
+				C8A0837726D7AC04009D4920 /* DetailRouter.swift in Sources */,
+				C8A0837326D7AC04009D4920 /* HeaderView.swift in Sources */,
+				C8A0837026D7AC04009D4920 /* DetailViewModel.swift in Sources */,
+				C8A0837A26D7AC2A009D4920 /* ListViewController.swift in Sources */,
 				C8A0832C26D79976009D4920 /* AppDelegate.swift in Sources */,
 				C8A0833626D79976009D4920 /* BeatlesAlbum.xcdatamodeld in Sources */,
+				C8A0836F26D7AC04009D4920 /* DetailPresenter.swift in Sources */,
+				C8A0837126D7AC04009D4920 /* DetailAssembly.swift in Sources */,
 				C8A0832E26D79976009D4920 /* SceneDelegate.swift in Sources */,
+				C8A0837426D7AC04009D4920 /* SongCell.swift in Sources */,
+				C8A0837226D7AC04009D4920 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
