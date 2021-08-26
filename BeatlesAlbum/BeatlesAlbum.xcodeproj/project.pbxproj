@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C8A0832C26D79976009D4920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0832B26D79976009D4920 /* AppDelegate.swift */; };
 		C8A0832E26D79976009D4920 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0832D26D79976009D4920 /* SceneDelegate.swift */; };
-		C8A0833026D79976009D4920 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0832F26D79976009D4920 /* ViewController.swift */; };
 		C8A0833626D79976009D4920 /* BeatlesAlbum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8A0833426D79976009D4920 /* BeatlesAlbum.xcdatamodeld */; };
 		C8A0833826D7997A009D4920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A0833726D7997A009D4920 /* Assets.xcassets */; };
 		C8A0833B26D7997A009D4920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A0833926D7997A009D4920 /* LaunchScreen.storyboard */; };
@@ -49,7 +48,6 @@
 		C8A0832826D79976009D4920 /* BeatlesAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatlesAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A0832B26D79976009D4920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8A0832D26D79976009D4920 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C8A0832F26D79976009D4920 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C8A0833526D79976009D4920 /* BeatlesAlbum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeatlesAlbum.xcdatamodel; sourceTree = "<group>"; };
 		C8A0833726D7997A009D4920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8A0833A26D7997A009D4920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -126,10 +124,7 @@
 				C8A0832D26D79976009D4920 /* SceneDelegate.swift */,
 				C8A0836126D7AC04009D4920 /* Detail */,
 				C8A0837826D7AC29009D4920 /* List */,
-				C8A0832F26D79976009D4920 /* ViewController.swift */,
-				C8A0833726D7997A009D4920 /* Assets.xcassets */,
-				C8A0833926D7997A009D4920 /* LaunchScreen.storyboard */,
-				C8A0833C26D7997A009D4920 /* Info.plist */,
+				C8A0837B26D7DAC8009D4920 /* Resources */,
 				C8A0833426D79976009D4920 /* BeatlesAlbum.xcdatamodeld */,
 			);
 			path = BeatlesAlbum;
@@ -156,12 +151,12 @@
 		C8A0836126D7AC04009D4920 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				C8A0836226D7AC04009D4920 /* Presenter */,
-				C8A0836526D7AC04009D4920 /* DetailAssembly.swift */,
-				C8A0836626D7AC04009D4920 /* View */,
-				C8A0836A26D7AC04009D4920 /* Interactor */,
 				C8A0836C26D7AC04009D4920 /* DetailModule.swift */,
+				C8A0836526D7AC04009D4920 /* DetailAssembly.swift */,
 				C8A0836D26D7AC04009D4920 /* Router */,
+				C8A0836226D7AC04009D4920 /* Presenter */,
+				C8A0836A26D7AC04009D4920 /* Interactor */,
+				C8A0836626D7AC04009D4920 /* View */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -207,6 +202,16 @@
 				C8A0837926D7AC29009D4920 /* ListViewController.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		C8A0837B26D7DAC8009D4920 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C8A0833726D7997A009D4920 /* Assets.xcassets */,
+				C8A0833926D7997A009D4920 /* LaunchScreen.storyboard */,
+				C8A0833C26D7997A009D4920 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +366,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8A0833026D79976009D4920 /* ViewController.swift in Sources */,
 				C8A0837526D7AC04009D4920 /* DetailInteractor.swift in Sources */,
 				C8A0837626D7AC04009D4920 /* DetailModule.swift in Sources */,
 				C8A0837726D7AC04009D4920 /* DetailRouter.swift in Sources */,
@@ -544,7 +548,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2Z4Y76PYN;
-				INFOPLIST_FILE = BeatlesAlbum/Info.plist;
+				INFOPLIST_FILE = BeatlesAlbum/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,7 +567,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2Z4Y76PYN;
-				INFOPLIST_FILE = BeatlesAlbum/Info.plist;
+				INFOPLIST_FILE = BeatlesAlbum/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

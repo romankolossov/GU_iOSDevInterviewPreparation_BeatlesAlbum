@@ -3,7 +3,6 @@ import Foundation
 final class DetailInteractor {
 
     weak var output: DetailInteractorOutput?
-
     private let artistId: Int
 
     init(artistId: Int) {

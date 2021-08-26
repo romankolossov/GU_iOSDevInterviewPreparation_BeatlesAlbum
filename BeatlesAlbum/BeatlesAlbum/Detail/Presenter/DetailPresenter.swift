@@ -49,7 +49,6 @@ private extension DetailPresenter {
     }
 
     func transform(song: Artist.Song) -> DetailViewModel.Album.Song {
-
         DetailViewModel.Album.Song(
             name: song.name,
             duration: format(duration: song.duration)
@@ -60,6 +59,7 @@ private extension DetailPresenter {
         let minutes = Int(floor(duration / 60))
         let seconds = Int(duration) % 60
         var secondsValue = "00"
+
         if seconds < 10 && seconds > 0 {
             secondsValue = "0\(seconds)"
         } else if seconds > 10 {
