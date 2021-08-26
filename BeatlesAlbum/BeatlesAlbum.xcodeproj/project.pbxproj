@@ -25,6 +25,9 @@
 		C8A0837626D7AC04009D4920 /* DetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0836C26D7AC04009D4920 /* DetailModule.swift */; };
 		C8A0837726D7AC04009D4920 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0836E26D7AC04009D4920 /* DetailRouter.swift */; };
 		C8A0837A26D7AC2A009D4920 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0837926D7AC29009D4920 /* ListViewController.swift */; };
+		C8A0838026D7F954009D4920 /* CGFLoat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0837F26D7F954009D4920 /* CGFLoat+Extension.swift */; };
+		C8A0838226D7FC53009D4920 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0838126D7FC53009D4920 /* UIFont+Extension.swift */; };
+		C8A0838426D7FD53009D4920 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0838326D7FD53009D4920 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		C8A0836C26D7AC04009D4920 /* DetailModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailModule.swift; sourceTree = "<group>"; };
 		C8A0836E26D7AC04009D4920 /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		C8A0837926D7AC29009D4920 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C8A0837F26D7F954009D4920 /* CGFLoat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFLoat+Extension.swift"; sourceTree = "<group>"; };
+		C8A0838126D7FC53009D4920 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		C8A0838326D7FD53009D4920 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 				C8A0832D26D79976009D4920 /* SceneDelegate.swift */,
 				C8A0836126D7AC04009D4920 /* Detail */,
 				C8A0837826D7AC29009D4920 /* List */,
+				C8A0837C26D7F43C009D4920 /* Core */,
 				C8A0837B26D7DAC8009D4920 /* Resources */,
 				C8A0833426D79976009D4920 /* BeatlesAlbum.xcdatamodeld */,
 			);
@@ -212,6 +219,32 @@
 				C8A0833C26D7997A009D4920 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C8A0837C26D7F43C009D4920 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C8A0837D26D7F797009D4920 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C8A0837D26D7F797009D4920 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C8A0837E26D7F81A009D4920 /* FlyWeight */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C8A0837E26D7F81A009D4920 /* FlyWeight */ = {
+			isa = PBXGroup;
+			children = (
+				C8A0837F26D7F954009D4920 /* CGFLoat+Extension.swift */,
+				C8A0838126D7FC53009D4920 /* UIFont+Extension.swift */,
+				C8A0838326D7FD53009D4920 /* UIColor+Extension.swift */,
+			);
+			path = FlyWeight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,11 +402,14 @@
 				C8A0837526D7AC04009D4920 /* DetailInteractor.swift in Sources */,
 				C8A0837626D7AC04009D4920 /* DetailModule.swift in Sources */,
 				C8A0837726D7AC04009D4920 /* DetailRouter.swift in Sources */,
+				C8A0838226D7FC53009D4920 /* UIFont+Extension.swift in Sources */,
 				C8A0837326D7AC04009D4920 /* HeaderView.swift in Sources */,
 				C8A0837026D7AC04009D4920 /* DetailViewModel.swift in Sources */,
 				C8A0837A26D7AC2A009D4920 /* ListViewController.swift in Sources */,
+				C8A0838426D7FD53009D4920 /* UIColor+Extension.swift in Sources */,
 				C8A0832C26D79976009D4920 /* AppDelegate.swift in Sources */,
 				C8A0833626D79976009D4920 /* BeatlesAlbum.xcdatamodeld in Sources */,
+				C8A0838026D7F954009D4920 /* CGFLoat+Extension.swift in Sources */,
 				C8A0836F26D7AC04009D4920 /* DetailPresenter.swift in Sources */,
 				C8A0837126D7AC04009D4920 /* DetailAssembly.swift in Sources */,
 				C8A0832E26D79976009D4920 /* SceneDelegate.swift in Sources */,

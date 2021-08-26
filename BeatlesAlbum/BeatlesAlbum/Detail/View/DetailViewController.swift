@@ -59,7 +59,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        44.0
+        .heightForHeaderInSection
     }
 }
 

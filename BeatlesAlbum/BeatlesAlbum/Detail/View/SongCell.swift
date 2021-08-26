@@ -36,21 +36,21 @@ private extension SongCell {
     func configurePlayButton() {
         contentView.addSubview(playButton)
         playButton.setTitle("▶︎", for: .normal)
-        playButton.setTitleColor(.green, for: .normal)
-        playButton.setTitleColor(.darkGray, for: .selected)
+        playButton.setTitleColor(UIColor.playButtonTitleColorForNormal, for: .normal)
+        playButton.setTitleColor(UIColor.playButtonTitleColorForSelected, for: .selected)
     }
 
     func configureTitleLabel() {
         contentView.addSubview(titleLabel)
-        titleLabel.font = UIFont.systemFont(ofSize: 13, weight: .medium)
-        titleLabel.textColor = .gray
+        titleLabel.font = .songCellTitleLabelFont
+        titleLabel.textColor = .songCellTitleLabelTextColor
         titleLabel.textAlignment = .natural
     }
 
     func configureDurationLabel() {
         contentView.addSubview(durationLabel)
-        durationLabel.font = UIFont.systemFont(ofSize: 10, weight: .light)
-        durationLabel.textColor = .lightGray
+        durationLabel.font = .durationLabelFont
+        durationLabel.textColor = .durationLabelTextColor
         durationLabel.textAlignment = .right
     }
 }
@@ -60,7 +60,7 @@ private extension SongCell {
 private extension SongCell {
 
     enum Layout {
-        static let interelement: CGFloat = 8
+        static let interelement: CGFloat = .interelement
     }
 
     func constrainContents() {

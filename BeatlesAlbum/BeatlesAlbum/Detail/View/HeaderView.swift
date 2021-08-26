@@ -33,15 +33,15 @@ private extension HeaderView {
 
     func configureTitleLabel() {
         addSubview(titleLabel)
-        titleLabel.font = UIFont.systemFont(ofSize: 14, weight: .medium)
-        titleLabel.textColor = .gray
+        titleLabel.font = .titleLabelFont
+        titleLabel.textColor = .titleLabelTextColor
         titleLabel.textAlignment = .natural
     }
 
     func configureDateLabel() {
         addSubview(dateLabel)
-        dateLabel.font = UIFont.systemFont(ofSize: 10, weight: .light)
-        dateLabel.textColor = .lightGray
+        dateLabel.font = .dateLabelFont
+        dateLabel.textColor = .dateLabelTextColor
         dateLabel.textAlignment = .right
     }
 }
@@ -51,7 +51,7 @@ private extension HeaderView {
 private extension HeaderView {
 
     enum Layout {
-        static let interelement: CGFloat = 8
+        static let interelement: CGFloat = .interelement
     }
 
     func constrainContents() {

@@ -7,7 +7,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .listViewBackgroundColor
         title = "Artists"
         view.addSubview(tableView)
         tableView.frame = view.bounds
