@@ -8,25 +8,25 @@ public protocol DetailModuleOutput {}
 
 // MARK: - Module Components
 
-protocol DetailViewInput: class {
+protocol DetailViewInput: AnyObject {
 
-  func upadateDetails(_ details: DetailViewModel)
+    func upadateDetails(_ details: DetailViewModel)
 }
 
 protocol DetailViewOutput {
 
-  func viewIsReady()
+    func viewIsReady()
 }
 
 protocol DetailInteractorInput {
 
-  func obtainDetails()
+    func obtainDetails()
 }
 
-protocol DetailInteractorOutput: class {
+protocol DetailInteractorOutput: AnyObject {
 
-  func presentDetails(for artist: Artist)
+    func presentDetails(for artist: Artist)
 }
 
 protocol DetailRouterInput {}
-protocol DetailRouterOutput: class {}
+protocol DetailRouterOutput: AnyObject {}
