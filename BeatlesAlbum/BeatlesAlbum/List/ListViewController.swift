@@ -7,13 +7,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .listViewBackgroundColor
-        title = "Artists"
-        view.addSubview(tableView)
-        tableView.frame = view.bounds
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.dataSource = self
-        tableView.delegate = self
+
+        configureUI()
     }
 
     // MARK: - Datasource
@@ -23,7 +18,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Configuration.cellIdentifier, for: indexPath)
         cell.accessoryType = .disclosureIndicator
         cell.textLabel?.text = elements[indexPath.row].name
 
@@ -85,4 +80,42 @@ func getArtistList() -> [Artist] {
             ]
         )
     ]
+}
+
+// MARK: - Configuration
+
+private extension ListViewController {
+
+    enum Configuration {
+        static let cellIdentifier = "com.artist.cell"
+        static let listTitle = "Artists"
+    }
+
+    func configureUI() {
+        view.backgroundColor = .listViewBackgroundColor
+        title = Configuration.listTitle
+        view.addSubview(tableView)
+        configureTableView()
+        constrainContents() // tableView.frame = view.bounds
+    }
+
+    func configureTableView() {
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: Configuration.cellIdentifier)
+    }
+}
+
+// MARK: - Layout
+
+private extension ListViewController {
+
+    func constrainContents() {
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+
+        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
 }

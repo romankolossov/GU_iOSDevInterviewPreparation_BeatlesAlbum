@@ -13,6 +13,10 @@ import UIKit
 
         static let listViewBackgroundColor: UIColor = .white
 
+        // MARK: - Detail VC
+
+        static let detailViewBackgroundColor: UIColor = .white
+
         // MARK: - HeaderView
 
         static let titleLabelTextColor: UIColor = .gray

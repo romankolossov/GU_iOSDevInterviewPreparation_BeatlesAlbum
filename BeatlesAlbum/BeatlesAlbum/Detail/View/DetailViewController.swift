@@ -72,7 +72,7 @@ private extension DetailViewController {
     }
 
     func configureUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = .detailViewBackgroundColor
         view.addSubview(tableView)
         configureTableView()
         constrainContents()
