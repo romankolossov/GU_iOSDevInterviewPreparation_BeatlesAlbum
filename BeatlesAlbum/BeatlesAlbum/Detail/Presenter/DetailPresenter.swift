@@ -21,7 +21,7 @@ extension DetailPresenter: DetailInteractorOutput {
 
     func presentDetails(for artist: Artist) {
         let viewModel = transform(model: artist)
-        view?.upadateDetails(viewModel)
+        view?.updateDetails(viewModel)
     }
 }
 

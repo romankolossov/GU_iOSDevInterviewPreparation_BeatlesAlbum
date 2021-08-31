@@ -1,5 +1,5 @@
 //
-//  CGFLoat+Extension.swift
+//  CGFloat+Extension.swift
 //  BeatlesAlbum
 //
 //  Created by Roman Kolosov on 26.08.2021.
@@ -9,7 +9,7 @@ import UIKit
 
 extension CGFloat {
 
-    // MARK: - DeatailVC
+    // MARK: - DetailVC
 
     static let heightForHeaderInSection: CGFloat = 44.0
 

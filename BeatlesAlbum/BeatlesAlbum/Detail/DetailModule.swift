@@ -10,7 +10,7 @@ public protocol DetailModuleOutput {}
 
 protocol DetailViewInput: AnyObject {
 
-    func upadateDetails(_ details: DetailViewModel)
+    func updateDetails(_ details: DetailViewModel)
 }
 
 protocol DetailViewOutput {

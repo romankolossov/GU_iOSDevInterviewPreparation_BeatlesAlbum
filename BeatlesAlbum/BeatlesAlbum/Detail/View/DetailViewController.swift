@@ -17,7 +17,7 @@ final class DetailViewController: UIViewController {
 
 extension DetailViewController: DetailViewInput {
 
-    func upadateDetails(_ details: DetailViewModel) {
+    func updateDetails(_ details: DetailViewModel) {
         title = details.artistName
         tableContents = details
         tableView.reloadData()
